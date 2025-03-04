@@ -70,6 +70,11 @@ const sessionOptions = {
 //   res.send("Hi, I am root");
 // });
 
+// new listing
+app.get("/ovg",(req,res)=>{
+  res.send("new route")
+})
+
 app.use(session(sessionOptions));
 app.use(passport.initialize());
 app.use(passport.session());
