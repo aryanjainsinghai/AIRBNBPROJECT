@@ -70,10 +70,6 @@ app.get("/", (req, res) => {
   res.redirect("/listings");
 });
 
-// new listing
-app.get("/ovg",(req,res)=>{
-  res.send("new route")
-})
 
 app.use(session(sessionOptions));
 app.use(passport.initialize());
